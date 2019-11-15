@@ -16,13 +16,13 @@ class Cell:
     def __str__(self):
         """Cast to a string."""
         if self.is_on():
-            return "*"
+            return "\N{full Block}"
         return " "
 
     def __repr__(self):
         """Representation."""
         if self.is_on():
-            return "*"
+            return "\N{full Block}"
         return " "
 
     def is_on(self):
@@ -82,7 +82,7 @@ class CellGrid:
 
     def show(self):
         """Display the grid."""
-        time.sleep(1)
+        time.sleep(.5)
         print(chr(27) + "[2j")
         print("\033c")
         print("\x1bc")
@@ -105,7 +105,7 @@ class CellGrid:
 
 def main():
     """Drive the exercise."""
-    grid = CellGrid()
+    grid = CellGrid(30,30)
 
     grid.setup([[4, 5], [5, 5], [6, 5], [7, 6], [7, 7], [7, 8]])
     # grid.setup([[4, 5], [5, 5], [6, 5], [7, 5]])
