@@ -105,13 +105,13 @@ class CellGrid:
 
 def main():
     """Drive the exercise."""
-    a = CellGrid()
+    grid = CellGrid()
 
-    a.setup([[4, 5], [5, 5], [6, 5], [7, 6], [7, 7], [7, 8]])
+    grid.setup([[4, 5], [5, 5], [6, 5], [7, 6], [7, 7], [7, 8]])
 
     for _ in range(100):
-        a.show()
-        a.do_step()
+        grid.show()
+        grid.do_step()
 
 
 if __name__ == "__main__":
