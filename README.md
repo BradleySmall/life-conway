@@ -9,4 +9,4 @@ If a dead cell has 3 live neighbors it will be born to life from warmth.
 If a live cell has > 3 live neighbors it will smother to death.
 All other cases simply maintain state.
 
-
+Since Python uses utf8 using a full block character is possible
