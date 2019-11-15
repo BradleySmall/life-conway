@@ -1,3 +1,12 @@
-Attempt at ascii Conway's Game of Life.
+Conway's Game of Life.
 
-It has more to go, but it works for the time being. 
+Given a grid of cells each of which is either "live" or "dead" progress through a simulation of steps.
+
+At each step a given cell will either maintain its state, or change its state. 
+
+If a live cell has < 2 live neighbors it will die of lonliness. 
+If a dead cell has 3 live neighbors it will be born to life from warmth.
+If a live cell has > 3 live neighbors it will smother to death.
+All other cases simply maintain state.
+
+
