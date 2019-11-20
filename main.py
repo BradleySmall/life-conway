@@ -21,6 +21,7 @@ class Cell:
 
     def __repr__(self):
         """Representation."""
+        return "Cell()"
         if self.is_on():
             return "\N{Full Block}"
         return " "
